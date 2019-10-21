@@ -7,8 +7,8 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
+      <SEO title={"meta title"} description={post.excerpt}/>
       <section class="container sub-services py-5">
-      <SEO title={post.frontmatter.title} description={post.excerpt}/>
           {/* <div className="">
             <div className="service-heading text-center">
                 <h1>{post.frontmatter.title}</h1>
