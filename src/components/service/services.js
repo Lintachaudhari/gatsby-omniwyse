@@ -3,6 +3,7 @@ import "./services.scss";
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Link } from "gatsby"
+import SEO from "../seo"
 
 const Services =() =>(
     <StaticQuery
@@ -38,6 +39,7 @@ const Services =() =>(
                         <div className="row service-box">
                                 {data.allMarkdownRemark.edges.map(({node},i) => (
                                     <div  className="col-md-4 text-center mb-4 home-service-main" key={i}>
+                                        <SEO title={node.frontmatter.title} />
                                         <div className="service-grid card">
                                             <div className="card-body">
                                                 {/* <Img className="card-image" sizes={node.frontmatter.image.childImageSharp.fluid} /> */}
