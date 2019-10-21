@@ -6,16 +6,16 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-mongodb`,
-      options: {
-        dbName: `profile`,
-        collection: `studentData`,
-        // server: { address: 'cluster0-vta7i.mongodb.net'},
-        // auth: { user: `linta`, password: `linta123`},
-        // extraParams: { replicaSet: 'cluster0', ssl: true, authSource: `admin`, retryWrites: true }
-      }  
-    },
+    // {
+    //   resolve: `gatsby-source-mongodb`,
+    //   options: {
+    //     dbName: `profile`,
+    //     collection: `studentData`,
+    //     // server: { address: 'cluster0-vta7i.mongodb.net'},
+    //     // auth: { user: `linta`, password: `linta123`},
+    //     // extraParams: { replicaSet: 'cluster0', ssl: true, authSource: `admin`, retryWrites: true }
+    //   }  
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -62,7 +62,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-manifest`,
