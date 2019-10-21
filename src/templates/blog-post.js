@@ -8,6 +8,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     return (
         <Layout>
+        <SEO title={post.frontmatter.title} description={post.excerpt}/>
         <div className="content-page">
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -26,6 +27,7 @@ export const query = graphql`
       frontmatter {
         title
       }
+      excerpt
     }
   }
 `
