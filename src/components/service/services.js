@@ -39,7 +39,6 @@ const Services =() =>(
                         <div className="row service-box">
                                 {data.allMarkdownRemark.edges.map(({node},i) => (
                                     <div  className="col-md-4 text-center mb-4 home-service-main" key={i}>
-                                         <SEO title={node.frontmatter.title} description={node.excerpt}/>
                                         <div className="service-grid card">
                                             <div className="card-body">
                                                 {/* <Img className="card-image" sizes={node.frontmatter.image.childImageSharp.fluid} /> */}

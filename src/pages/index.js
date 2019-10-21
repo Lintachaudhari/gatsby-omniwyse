@@ -40,7 +40,10 @@ const IndexPage = () => (
 
 render={data => (
   <Layout>
-    <SEO title="Home" />
+     <SEO
+          title="Home"
+          keywords={[`TRANSIT TECH`, ` STARTUPS`, `SOFTWARE PRODUCT DEVELOPMENT`, `omniwyse`]}
+        />
       <Slider/>
       <Services/>
       {/* <Customers/> */}
