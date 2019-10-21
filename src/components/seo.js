@@ -29,9 +29,6 @@ function SEO({ description, lang, image, meta, keywords, title, pathname }) {
                 content: title,
               },
               // {
-              //   property: `og:url`,
-              //   content: metaUrl,
-              // },
               {
                 property: `og:description`,
                 content: metaDescription,
@@ -42,7 +39,7 @@ function SEO({ description, lang, image, meta, keywords, title, pathname }) {
               },
               {
                 name: `twitter:creator`,
-                content: `@${data.site.siteMetadata.social.twitter}`,
+                content: ``,
               },
               {
                 name: `twitter:title`,
