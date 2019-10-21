@@ -2,13 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
 import { LandingBody } from "../components/styles/LandingBody"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
       <section class="container sub-services py-5">
-        <Seo title={post.title}/>
+      <SEO title={post.frontmatter.title} description={post.excerpt}/>
           {/* <div className="">
             <div className="service-heading text-center">
                 <h1>{post.frontmatter.title}</h1>
@@ -32,6 +32,7 @@ export const query = graphql`
         title
         description
       }
+      excerpt
     }
   }
 `
