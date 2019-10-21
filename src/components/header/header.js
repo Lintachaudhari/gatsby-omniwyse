@@ -55,9 +55,9 @@ const Header = ({ siteTitle }) => (
               <Nav.Link>
                 <Link to="/about_us">About Us</Link>
               </Nav.Link>
-              <Nav.Link>
+              {/* <Nav.Link>
                 <Link to="/profile">Student profile</Link>
-              </Nav.Link>
+              </Nav.Link> */}
               <NavDropdown title="Services" id="collasible-nav-dropdown">
                 {data.service.edges.map(({ node }, i) => (
                   <NavDropdown.Item key={i}>
