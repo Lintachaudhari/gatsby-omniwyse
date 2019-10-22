@@ -1,15 +1,13 @@
 ---
-title: "Features"
-heading: "SOLUTIONS FOR TRANSIT TECH"
-meta_title: "Ghost Features - Customisable professional publishing software"
-description: "Discover the powerful features built directly into Ghost's core software, including a developer friendly API, rich editor, custom themes, apps & integrations!"
-posttype: "service"
-keywords:
-    - concepts
-    - ghost
-    - publishing
-    - features
-sidebar: "concepts"
+posttype: service
+title: New Feature
+date: 2019-10-22T11:56:07.498Z
+heading: SOLUTIONS FOR TRANSIT TECH
+image: /../../assets/database.png
+description: >-
+  Discover the powerful features built directly into Ghost's core software,
+  including a developer friendly API, rich editor, custom themes, apps &
+  integrations!
 ---
 
 Ghost comes with powerful features built directly into the core software which can be customised and configured based on the needs of each individual site.
